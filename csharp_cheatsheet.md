@@ -1,13 +1,16 @@
-# **Csharp Cheatsheet**
+# Csharp Cheatsheet
 ### Data Structures
 ---
-| Type       | mutable? ordered?| Notes                       |
-| ---------- | :--------------: | :-------------------------: |
-| Array      | Y/Y              | - O(1) lookup time          |
-|            |                  | - O(n) append time(if full) |
-|            |                  | - Static size               |
-|            |                  | - primitive/object data     |
-
+| Type          | mutable? ordered?| Notes                      |
+| ------------- |:-------------:   | :-----------------------:  |
+| Array         | Y/Y              | - O(1) lookup time         |
+|               |                  | - O(n) append time(if full)|
+|               |                  | - Static size              |
+|               |                  | - primitive/object data    |
+| ArrayList     | Y/Y              | - O(1) lookup time         |
+|               |                  | - O(1) append time(average)|
+|               |                  | - Dynamic size             |
+|               |                  | - object data              |
 
 ### {Array}
 ---
@@ -28,4 +31,18 @@ Arrays.Copy(arr, copyarr, 5)                      // copies subarray starting fr
 Arrays.ConstrainedCopy(arr, 5, concopyarr, 0, 5)  // copies subrarry from  source, source index 5, dest, dest index 0, length 5
 ```
 
+### {ArrayList}
+---
+##### Initializing ArrayList
+```csharp
+// Creates and initializes a new ArrayList.
+ArrayList myAL = new ArrayList();
+```
 
+##### Basic Operations
+```csharp
+myAL.Add("!");          //Add new element
+myAL.Count();           //Count
+myAL.Capacity();        //Capacity
+myAL.Sort();            //Sort the elements
+```
