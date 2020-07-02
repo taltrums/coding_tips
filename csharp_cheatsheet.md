@@ -41,8 +41,9 @@ ArrayList myAL = new ArrayList();
 
 ##### Basic Operations
 ```csharp
-myAL.Add("!");          //Add new element
-myAL.Count();           //Count
-myAL.Capacity();        //Capacity
-myAL.Sort();            //Sort the elements
+myAL.Add("!");                                      //Add new element
+var c = myAL.Count;                                 //Count
+var cap = myAL.Capacity();                          //Capacity
+myAL.Sort();                                        //Sort the elements
+var arr =(String[])myAL.ToArray(typeof(string));    //Convert to Array
 ```
