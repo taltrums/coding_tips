@@ -43,7 +43,7 @@ ArrayList myAL = new ArrayList();
 ```csharp
 myAL.Add("!");                                      //Add new element
 var c = myAL.Count;                                 //Count
-var cap = myAL.Capacity();                          //Capacity
+var cap = myAL.Capacity;                          //Capacity
 myAL.Sort();                                        //Sort the elements
 var arr =(String[])myAL.ToArray(typeof(string));    //Convert to Array
 ```
