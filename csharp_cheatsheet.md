@@ -11,6 +11,7 @@
 |               |                  | - O(1) append time(average)|
 |               |                  | - Dynamic size             |
 |               |                  | - object data              |
+| String        | N/NA             |                            |
 
 ### {Array}
 ---
@@ -43,7 +44,36 @@ ArrayList myAL = new ArrayList();
 ```csharp
 myAL.Add("!");                                      //Add new element
 var c = myAL.Count;                                 //Count
-var cap = myAL.Capacity;                          //Capacity
+var cap = myAL.Capacity;                            //Capacity
 myAL.Sort();                                        //Sort the elements
 var arr =(String[])myAL.ToArray(typeof(string));    //Convert to Array
+```
+
+### "String and StringBuilder" 
+---
+##### String Multiplication 
+```csharp
+// Stringbuilder creates a resizeable array to mutate strings
+
+// Create "hellohellohellohello"
+StringBuilder sb = new StringBuilder();
+for(int i = 0; i < 4; i++){
+    sb.Append("hello");
+}
+sb.ToString();
+```
+
+##### String Manipulation
+```csharp
+// Change "Herlo" to "Hello"
+
+// 1st method using substrings
+String s1 = "Herlo";
+s1 = s1.Substring(0,2) + "l" + s1.Substring(3);
+
+// 2nd method using stringbuilder
+String s2 = "Herlo";
+StringBuilder sb = new StringBuilder(s2);
+sb.Replace('r','l');
+s2 = sb.ToString();
 ```
