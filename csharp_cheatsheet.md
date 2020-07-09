@@ -11,6 +11,8 @@
 |               |                  | - O(1) append time(average)|
 |               |                  | - Dynamic size             |
 |               |                  | - object data              |
+| Stack/Queue   |                  | - Stack retrieval LIFO     |
+|               |                  | - Queue retrieval FIFO     |
 | String        | N/NA             |                            |
 
 ### {Array}
@@ -68,12 +70,22 @@ sb.ToString();
 // Change "Herlo" to "Hello"
 
 // 1st method using substrings
-String s1 = "Herlo";
+string s1 = "Herlo";
 s1 = s1.Substring(0,2) + "l" + s1.Substring(3);
 
 // 2nd method using stringbuilder
-String s2 = "Herlo";
+string s2 = "Herlo";
 StringBuilder sb = new StringBuilder(s2);
 sb.Replace('r','l');
 s2 = sb.ToString();
+```
+
+##### String(Object) Operations
+```csharp
+s1.CompareTo(s2);                          // compare order
+s1.Equals(s2);                             // equality check
+s1[2];                                     // finds letter at index 2
+s1.Length;                                 // find string length
+s1[2].GetType();                           // determine if alphabet or number
+s1.ToLower();                              // char to lower case, does not mutate string
 ```
