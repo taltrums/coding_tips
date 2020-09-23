@@ -28,3 +28,12 @@ Proxy : a server that acts as a middleman between a client and another server
   1) Forward Proxy : acts on the behalf of the client, could mask the identity of client (VPNs) 
   2) Reverse Proxy : acts on the behalf of the server (load balancer) 
 ```
+### API Design
+---
+##### What is API
+```
+1) interface that defines interactions between software such as types of calls/requests, how they are made, data formats, conventions 
+2) way of communicating between applications 
+3) allows for servers/systems to communicate such that automation is possible 
+4) allows information to be shared as a service 
+```
