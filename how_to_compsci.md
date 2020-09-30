@@ -37,3 +37,24 @@ Proxy : a server that acts as a middleman between a client and another server
 3) allows for servers/systems to communicate such that automation is possible 
 4) allows information to be shared as a service 
 ```
+
+##### REST Principles
+```
+REST principles 
+  1) verbs : GET (read), POST (create), PUT/PATCH (update entire/partial), DELETE (delete)
+```
+
+##### Status Codes
+```
+1xx : Request received and understood 
+2xx : Request by client was received, understood, and accepted 
+  1) 201 Resource Created (for POST methods)
+  2) 202 Accepted 
+  3) 204 No content (for DELETE methods)
+3xx : Client must take additional actions 
+4xx : Client screwed up (for wrong GET,DELETE requests)
+5xx : Server screwed up
+  1) 500 Internal Server Error
+  2) 504 Gateway Timeout
+```
+
