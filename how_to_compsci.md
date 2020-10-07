@@ -58,3 +58,20 @@ REST principles
   2) 504 Gateway Timeout
 ```
 
+##### Object Relational Mapping
+```
+Converting data between relational databases and OOP languages such that they become compatible with each other
+Query database using an object-oriented paradigm (graph of objects) instead of SQL (tabular format) 
+```
+
+### Language Specifics
+---
+##### HTML/CSS
+```
+HTML
+  1) static language used to display data
+  2) hypertext language : defines links between web pages 
+  3) markup language : defines text within tags that defines structures of web pages 
+  
+CSS : style sheet for HTML 
+```
