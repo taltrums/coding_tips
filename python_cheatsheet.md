@@ -79,3 +79,37 @@ s.isalpha()             # Checks alphabet character
 s.isdecimal()           # Checks decimal character
 s.isnumeric()           # Checks numeric
 ```
+
+### Python Things
+---
+##### List Comprehension
+```python
+l = [i for i in range(5)]
+```
+
+##### Multiple Inheritance
+```python
+class ArcticBear(Arctic, Bear, Land):
+```
+
+##### Split / Join
+```python
+strs = "hello there"    
+strs = strs.split(" ")              # ["hello","there"]
+strs = " ".join(strs)               # "hello there"
+```
+
+##### Zip
+```python
+a = [1,2,3] 
+b = [4,5,6]
+for i in zip(a,b):
+    print(i)     # [(1,4),(2,5),(3,6)]
+```
+
+##### Map
+```python
+nums = [1,2,3,4]
+k = map(lambda x : x**2, nums)
+print(list(k))     # [1,4,9,16]
+```
