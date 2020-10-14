@@ -10,6 +10,7 @@ CI/CD
   
 ETL 
   1) extract, transform, and load one database to another
+```
 
 
 ### Systems Design
@@ -42,6 +43,7 @@ Proxy : a server that acts as a middleman between a client and another server
   1) Forward Proxy : acts on the behalf of the client, could mask the identity of client (VPNs) 
   2) Reverse Proxy : acts on the behalf of the server (load balancer) 
 ```
+
 ##### Microservices 
 ```
 architectural design that breaks a monolithic application into smaller pieces, which communicate through HTTP/API
@@ -58,6 +60,8 @@ cons
   2) information barriers between different services
   3) must implement means of communicating between services
   4) large upfront investment in automation as manual deployment becomes more difficult
+```
+
 
 ### API Design
 ---
