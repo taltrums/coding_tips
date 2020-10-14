@@ -1,3 +1,17 @@
+##### Methodology
+```
+Agile
+  1) approach to break development into stages and constantly collaborate with end users
+  2) advocates adaptive planning, evolutionary development, early delivery, and continual improvement 
+  
+CI/CD
+  1) continous integration, continous delivery 
+  2) bridges gap between development and operations through automation to allow DevOps procedures
+  
+ETL 
+  1) extract, transform, and load one database to another
+
+
 ### Systems Design
 ---
 ##### Protocols 
@@ -28,6 +42,23 @@ Proxy : a server that acts as a middleman between a client and another server
   1) Forward Proxy : acts on the behalf of the client, could mask the identity of client (VPNs) 
   2) Reverse Proxy : acts on the behalf of the server (load balancer) 
 ```
+##### Microservices 
+```
+architectural design that breaks a monolithic application into smaller pieces, which communicate through HTTP/API
+
+pros 
+  1) independent services with ability to use different programming languages
+  2) easier to understand codebase and modify 
+  3) when failure arises, only particular service goes down
+  4) easier to scale specific process / service
+  5) less commitment to a tech stack and able to change to new tech faster 
+
+cons 
+  1) testing can be complicated and managing the whole product becomes more difficult 
+  2) information barriers between different services
+  3) must implement means of communicating between services
+  4) large upfront investment in automation as manual deployment becomes more difficult
+
 ### API Design
 ---
 ##### What is API
