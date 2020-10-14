@@ -80,6 +80,14 @@ s.isdecimal()           # Checks decimal character
 s.isnumeric()           # Checks numeric
 ```
 
+### [Other Data Structures]
+---
+##### Set
+```python
+set.add(4)
+set.union(set2)
+```
+
 ### Python Things
 ---
 ##### List Comprehension
@@ -112,4 +120,30 @@ for i in zip(a,b):
 nums = [1,2,3,4]
 k = map(lambda x : x**2, nums)
 print(list(k))     # [1,4,9,16]
+```
+
+##### Changing integer to different formats
+```python
+bin(x)    # Returns integer x as a string of binary numbers
+hex(x)    # Returns integer x as a string of hex (0xffff format)
+```
+
+##### Random
+```python
+random.shuffle(nums)                         # randomly shuffles array
+random.randint(1,3)                          # random number out of 1,2,3
+```
+
+##### Iterator
+```python
+nums = [1,2,3,4,5]
+it = iter(nums)
+print(next(it))
+```
+
+##### Iterator
+```python
+nums = [1,2,3,4,5]
+it = iter(nums)
+print(next(it))
 ```
