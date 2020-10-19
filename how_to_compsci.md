@@ -44,6 +44,29 @@ Proxy : a server that acts as a middleman between a client and another server
   2) Reverse Proxy : acts on the behalf of the server (load balancer) 
 ```
 
+##### Database Types
+```
+Why not write scripts to query data?
+You must potentially load all the data into memory when running on Python. 
+
+Relational Database : Data stored in table(relations) form and organized in a strict, predefined way (usually supports SQL)  
+Non-relational Database : Flexible (non-tabular) form not precisely organized in a predefined way 
+SQL : relational, structured/predefined, table-based, less scalability, better for ranged queries, strong consistency  
+NoSQL : non-relational, unstructured/flexible, key-value paired (JSON objects), better scalability, eventual consistency  
+
+ACID principles for SQL 
+  1) Atomicity : guarantee that when one operation fails(succeeds), all other following operations fails(succeeds) 
+  2) Consistency : each transaction ensures that the database moves from one valid state to another valid state (does not corrupt data)
+  3) Isolation : when you run operations concurrently, the result will be as if you ran the operations in sequence
+  4) Durability : once the data is stored in the database, it will remain to do so
+
+BASE principles for NoSQL
+  1) Basically Available : system guarantees availability
+  2) Soft State : state of system and replicas might change over time even without input 
+  3) Eventual Consistency 
+```
+
+
 ##### Microservices 
 ```
 architectural design that breaks a monolithic application into smaller pieces, which communicate through HTTP/API
