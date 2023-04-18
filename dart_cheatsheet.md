@@ -68,7 +68,34 @@ Map<int, String> planetMaps = {1 : 'Mercury', 2 : 'Venus', 3 : 'Earth'};
 ```
 Iterating a map
 ```dart
-for(int i in planetsMap.keys){
+for(int i in planetsMapat.keys){
     print(planetsMap[i]);
 }
+```
+
+### [Set]
+```dart
+Set hashSet = HashSet(); // no specified order
+Set linkedHashSet = LinkedHasSet(); // insertation based on the order the items
+var splayTreeSet = SplayTreeSet(); // store data that is comparable, no null values permitted
+```
+Adding an item
+```dart
+var set = <int> {1, 2, 3, 4, 5};
+set.add(6);
+print(set);
+```
+Updating the set
+```dart
+var newSet = set.map((e) => e == 1 ? 11 : e).toSet();
+```
+Removing an item
+```dart
+set.remove(5)
+```
+Iterating on a set
+```dart
+set.forEach((element) {
+    print(element);
+});
 ```
