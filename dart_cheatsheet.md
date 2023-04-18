@@ -42,8 +42,33 @@ while(iterator.moveNext()){
     print(iterator.current);
 }
 ```
+
 ### [Map]
 ```dart
 var planetsMap = {1 : "Mercury", 2 : "Venus", 3 : "Earth", 4 :  "Mars"};
 planetsMap[5] = "Jupitor";
+```
+Adding a collection
+```dart
+planetsMap.addAll({6 : "Saturn", 7 : "Uranus", 8 : "Neptune"});
+```
+Adding if key does not exists
+```dart
+planetsMap.putIfAbsent(1, () => "Mercury");
+```
+Removing
+```dart
+planetsMap.remove(1);
+
+planetsMap.removeWhere((key, value) => value.startsWith('M'));
+```
+Map with specific data type
+```dart
+Map<int, String> planetMaps = {1 : 'Mercury', 2 : 'Venus', 3 : 'Earth'};
+```
+Iterating a map
+```dart
+for(int i in planetsMap.keys){
+    print(planetsMap[i]);
+}
 ```
