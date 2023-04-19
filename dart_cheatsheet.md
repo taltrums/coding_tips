@@ -119,7 +119,7 @@ i ??= 7; // value is still 5
 ```
 
 ### [Functions]
-### Null Saftey
+### Null Safety
 ```dart
 printEmployee(String name, {required String department, required bool isActive}) {
 
@@ -129,14 +129,14 @@ printEmployee(String name, {required String department, required bool isActive})
 printEmployee("", isActive: false, department: "IT");
 ```
 
-### Lambda function
+### [Lambda function]
 ```dart
 Functionn lambdaFunction = {int number, String name} {
 };
 var lambdaFunction2 = {double number, String name} {
 };
 ```
-### Arrow function
+### [Arrow function]
 ```dart
 Function arrowFunction = (int a, int b) => a + b;
 
