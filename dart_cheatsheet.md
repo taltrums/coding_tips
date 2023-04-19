@@ -99,3 +99,21 @@ set.forEach((element) {
     print(element);
 });
 ```
+### [String Interpolation]
+```dart
+'${5 + 7}' // 12
+'${"hello".toUpperCase()}' // HELLO
+'$5' // 5.toString()
+```
+
+### [Nullable variables]
+```dart
+int i = null; // invalid
+int? i = null; // valid
+int? i; // value is null initially
+```
+### [Null-aware operator]
+```dart
+i ??= 5; // value updates to 5
+i ??= 7; // value is still 5
+```
