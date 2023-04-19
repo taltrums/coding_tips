@@ -117,3 +117,33 @@ int? i; // value is null initially
 i ??= 5; // value updates to 5
 i ??= 7; // value is still 5
 ```
+
+### [Functions]
+### Null Saftey
+```dart
+printEmployee(String name, {required String department, required bool isActive}) {
+
+}
+// positional arg name 
+// required arg department and isActive
+printEmployee("", isActive: false, department: "IT");
+```
+
+### Lambda function
+```dart
+Functionn lambdaFunction = {int number, String name} {
+};
+var lambdaFunction2 = {double number, String name} {
+};
+```
+### Arrow function
+```dart
+Function arrowFunction = (int a, int b) => a + b;
+
+Function arrowFunction2 = (int a, int b) => a + b;
+
+// same as above with different syntax
+Function arrowFunction2 = (int a, int b){
+return a + b;
+};
+```
