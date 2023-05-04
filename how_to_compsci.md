@@ -9,6 +9,15 @@ deadlocks : processes are blocked because each process holds the resource needed
 
 kernel : core of operating system that controls tasks 
 shell : interface to communicate with kernel 
+
+Scheduler : Scheduler is responsible for selecting the next process to run through a scheduling algorithim.
+
+Dispatcher : Dispatcher is responsible for performing context switching of processes that the schedulert selects to run.
+
+Context switching : involves saving the state of the current process and loading state of the new process. It ensures to take the selected process from the ready queue to be executed by CPUs.
+
+Hypervisor : it breaks dependencies from the host OS and alows VM's to share hardware of the host.
+assigns virtualised hardware resources to VMs that are isolated from the other VMs.
 ```
 
 ##### Types
