@@ -188,12 +188,20 @@ package main
 import (
   "fmt"
   "sync"
+  "time"
   )
 
 // Go Routine
 func greet(wg *sync.WaitGroup) {
   defer wg.Done()
   fmt.Println("Hello World from go routine!")
+}
+
+func process(name string) {
+  for i := 0; i < 5; i++ {
+    fmt.Println(name, ":", i)
+    time.Sleep(time.Millisecond * 500)
+  }
 }
 
 func main() {
@@ -207,8 +215,74 @@ func main() {
   wg.Wait()
 
   fmt.Println("Hello World from Main!")
+
+  ch := make(chan int)
+
+  go func() {
+    ch <- 42
+  }()
+
+  value := <-ch
+  
+  fmt.Println("Value recieved from channel: ", value)
+
+  bufferCh := make(chan int, 2)
+
+  bufferCh <- 1
+  bufferCh <- 2
+
+  fmt.Println("Value 1 from buffered Channel: ", <-bufferCh)
+  fmt.Println("Value 2 from buffered Channel: ", <-bufferCh)
+
+
+  var wg1 sync.WaitGroup
+  wg1.Add(2)
+
+  go func(){
+    defer wg1.Done()
+    process("A")
+  }()
+
+  go func() {
+    defer wg1.Done()
+    process("B")
+  }()
+
+  wg1.Wait()
+
 }
 
+```
+### JSON Handling
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type Game struct {
+  Name string `json:"name"`
+  Console string `json:"console"`
+}
+
+func main() {
+   g := Game{Name: "Uncharted", Console: "PS4"}
+
+   gl := []Game{
+    {Name: "Uncharted", Console: "Playstation"},
+    {Name: "The Legend of Zelda", Console: "Nintendo Switch"},
+		{Name: "Gears of War", Console: "XBox"},
+  }
+  
+  jsonBytes, _ := json.Marshal(g)
+  fmt.Println(string(jsonBytes))
+
+  jsonBytesl, _ := json.Marshal(gl)
+  fmt.Println(string(jsonBytesl))
+}
 ```
 
 
