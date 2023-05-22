@@ -127,7 +127,7 @@ type Circle struct {
 }
 
 func (c Circle) Area() float64 {
-  return c.radius * c.radius
+  return 3.14 * c.radius * c.radius
 }
 
 func main() {
@@ -138,3 +138,4 @@ func main() {
   fmt.Println("Area:", area)
 }
 ```
+
