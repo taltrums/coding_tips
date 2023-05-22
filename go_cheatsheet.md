@@ -139,3 +139,76 @@ func main() {
 }
 ```
 
+### Interfaces
+
+```go
+type Shape interface {
+  Area() float64
+}
+
+type Circle struct {
+  radius float64
+}
+
+type Rectangle struct {
+  width float64
+  height float64
+}
+
+// Implementing area for rectangle interface
+func (r Rectangle) Area() float64 {
+  return r.width * r.height
+}
+
+// Implemment area for circle interface
+func (c Circle) Area() float64 {
+  return 3.14 * c.radius * c.radius
+}
+
+func main() {
+    
+    rect := Rectangle{width: 10, height: 5}
+    circ := Circle{radius: 5}
+
+	// Using the interface
+    shapes := []Shape{rect, circ}
+
+	for _, shape := range shapes {
+		area := shape.Area()
+		fmt.Println("Area:", area)
+	}
+}
+```
+
+### Concurrency
+
+```go
+package main
+
+import (
+  "fmt"
+  "sync"
+  )
+
+// Go Routine
+func greet(wg *sync.WaitGroup) {
+  defer wg.Done()
+  fmt.Println("Hello World from go routine!")
+}
+
+func main() {
+  var wg sync.WaitGroup
+  wg.Add(1)
+
+  // go routine
+  go greet(&wg)
+
+  // wait for go routine to finish
+  wg.Wait()
+
+  fmt.Println("Hello World from Main!")
+}
+
+```
+
+
