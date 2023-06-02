@@ -1,4 +1,4 @@
-[Operating Systems in Three Easy Pieces]
+[Operating System]
 
 **Chapter 1: Introduction**
 - Introduction to Operating Systems: Operating systems are software that manage computer hardware and software resources and provide services to applications.
@@ -46,8 +46,39 @@
 - Determines the order in which processes are allocated CPU time.
 - Various scheduling algorithms like FCFS, Round Robin, and Priority Scheduling can be used.
 
+Chapter 3: Interlude: Process API
 
-**Chapter 3 Memoryb Management**
+- Process API: Process API provides a set of system calls and functions for creating, managing, and communicating between processes.
+- Process Creation: Processes can be created using system calls like fork(), which creates a new process as a copy of the existing process.
+- Process Termination: Processes can terminate using system calls like exit(), which releases the resources and terminates the process.
+- Process Communication: Processes can communicate with each other using various inter-process communication (IPC) mechanisms like pipes, shared memory, and message passing.
+- Process Synchronization: Processes can synchronize their activities using synchronization primitives like semaphores and mutexes.
+
+
+1. Process API:
+
+- Set of system calls and functions for creating, managing, and communicating between processes.
+
+2. Process Creation:
+
+- fork(): Creates a new process as a copy of the existing process.
+
+- Process Termination:
+
+- exit(): Terminates the process and releases the associated resources.
+
+3. Process Communication:
+
+- Pipes: Provides a unidirectional communication channel between processes.
+- Shared Memory: Allows multiple processes to access the same memory region.
+- Message Passing: Processes exchange messages through a communication mechanism provided by the operating system.
+
+4. Process Synchronization:
+
+- Semaphores: A synchronization primitive that allows processes to coordinate access to shared resources.
+- Mutexes: Mutual exclusion locks used to protect critical sections of code.
+
+**Memory Management**
 
 - Memory Management: Memory management is the process of allocating and managing memory resources in an operating system. It involves keeping track of which parts of memory are in use, allocating memory to processes, and reclaiming memory when it is no longer needed.
     
