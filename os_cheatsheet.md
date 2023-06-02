@@ -1,6 +1,6 @@
 [Operating System]
 
-**Chapter 1: Introduction**
+**Introduction**
 - Introduction to Operating Systems: Operating systems are software that manage computer hardware and software resources and provide services to applications.
 - Kernel Space vs. User Space: Kernel space is the protected part of the operating system where privileged operations and critical functions are executed. User space is where user applications and less critical tasks run.
 - Components of an Operating System: Operating systems consist of four main components: processes, memory management, storage management, and I/O handling.
@@ -18,7 +18,7 @@
 - Storage Management: Organizing and managing storage devices and file systems.
 - I/O Handling: Managing input and output operations with devices.
 
-**Chapter 2: Processes**
+**Processes**
 - Process Definition: A process is an executing program with its own memory space and resources. It represents an instance of a running program.
 - Process States: Processes can be in different states, including running, ready, waiting, and terminated, based on their execution status and resource availability.
 - Context Switching: Context switching is the mechanism of saving the current state of a process and restoring the saved state of another process for seamless execution.
@@ -46,7 +46,7 @@
 - Determines the order in which processes are allocated CPU time.
 - Various scheduling algorithms like FCFS, Round Robin, and Priority Scheduling can be used.
 
-Chapter 3: Interlude: Process API
+**Interlude: Process API**
 
 - Process API: Process API provides a set of system calls and functions for creating, managing, and communicating between processes.
 - Process Creation: Processes can be created using system calls like fork(), which creates a new process as a copy of the existing process.
